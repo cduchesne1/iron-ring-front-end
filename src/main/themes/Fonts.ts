@@ -10,59 +10,120 @@ const type: Types = {
   medium: 'Noah-Medium',
 };
 
-function xlarge(fontFamily: string = 'base') {
+function title(color: Colors = Colors.black) {
   return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
-    fontSize: 36,
-  };
-}
-
-function medium(fontFamily: string = 'base') {
-  return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
+    color: color,
+    fontFamily: type.heavy,
     fontSize: 28,
+    letterSpacing: 0.2,
   };
 }
 
-function secondary(fontFamily: string = 'base') {
+function topicTitle(color: Colors = Colors.black) {
   return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
-    fontSize: 20,
+    color: color,
+    fontFamily: type.heavy,
+    fontSize: 36,
+    letterSpacing: 0.2,
   };
 }
 
-function main(fontFamily: string = 'base') {
+function paragraph(color: Colors = Colors.black) {
   return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
+    color: color,
+    fontFamily: type.medium,
     fontSize: 18,
+    letterSpacing: 0.2,
   };
 }
 
-function sub(fontFamily: string = 'base') {
+function body(color: Colors = Colors.black) {
   return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
+    color: color,
+    fontFamily: type.medium,
+    fontSize: 18,
+    letterSpacing: 0.2,
+  };
+}
+
+function comment(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.medium,
+    fontSize: 18,
+    letterSpacing: 0,
+  };
+}
+
+function input(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.medium,
+    fontSize: 18,
+    letterSpacing: 0,
+  };
+}
+
+function videoTimecode(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.bold,
+    fontSize: 20,
+    letterSpacing: 0.2,
+  };
+}
+function audioTitle(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.bold,
     fontSize: 16,
+    letterSpacing: 0,
   };
 }
-
-function small(fontFamily: string = 'base') {
+function audioTimecode(color: Colors = Colors.black) {
   return {
-    color: Colors.black,
-    fontFamily: type[fontFamily],
+    color: color,
+    fontFamily: type.medium,
     fontSize: 14,
+    letterSpacing: 0,
+  };
+}
+function commentName(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.bold,
+    fontSize: 16,
+    letterSpacing: 0,
+  };
+}
+function commentTime(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.medium,
+    fontSize: 14,
+    letterSpacing: 0,
+  };
+}
+function button(color: Colors = Colors.black) {
+  return {
+    color: color,
+    fontFamily: type.bold,
+    fontSize: 18,
+    letterSpacing: 0.2,
   };
 }
 
 export default {
-  small,
-  sub,
-  secondary,
-  main,
-  medium,
-  xlarge,
+  title,
+  topicTitle,
+  paragraph,
+  body,
+  comment,
+  input,
+  videoTimecode,
+  audioTitle,
+  audioTimecode,
+  commentName,
+  commentTime,
+  button,
 };

@@ -1,4 +1,8 @@
-const Colors = {
+interface Colors {
+  [key: string]: any;
+}
+
+const Colors: Colors = {
   codGray: '#121212',
   white: '#FFFFFF',
   silverChalice: '#9F9F9F',
